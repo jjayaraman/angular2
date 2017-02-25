@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MycompComponent } from './mycomp/mycomp.component';
+import { MydirDirective } from './mydir.directive';
+import { MypipePipe } from './mypipe.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MycompComponent,
+    MydirDirective,
+    MypipePipe
   ],
   imports: [
     BrowserModule,
