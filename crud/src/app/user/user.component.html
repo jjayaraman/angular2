@@ -1,16 +1,20 @@
 <h3>User List</h3>
 
-<ul>
-    <!--<li *ngFor='let user of users'>
-        {{user.email}}
-    </li>-->
-
-    <li *ngFor='let comment of comments'>
-        {{comment.id}}
-  {{comment.email}}
-    {{comment.name}}
-    </li>
-
-  
-
-</ul>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let comment of comments">
+            <td scope="row">{{comment.id}}</td>
+            <td>{{comment.name}}</td>
+            <td>{{comment.email}}</td>
+            <td>{{comment.body}}</td>
+            </tr>
+    </tbody>
+</table>

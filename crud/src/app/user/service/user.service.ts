@@ -15,7 +15,7 @@ export class UserService {
   //   return [{ "email": "abc.com" }, { "email": "bbb@bxxxxxx.com" }];
   // }
 
-  private commentsUrl = "https://jsonplaceholder.typicode.com/users";
+  private commentsUrl = "https://jsonplaceholder.typicode.com/comments";
 
   getComments() {
     return this.http.get(this.commentsUrl)

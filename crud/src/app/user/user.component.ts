@@ -18,7 +18,6 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.loadComments();
-    console.log('data loaded..');
   }
 
   //users = [{ "email": "abc.com" }, { "email": "bbb@bbc.com" }];
@@ -28,7 +27,6 @@ export class UserComponent implements OnInit {
 
     this.userService.getComments()
       .subscribe(data => this.comments = data);
-     console.log("data :: " +this.comments) ;
 
   }
 
