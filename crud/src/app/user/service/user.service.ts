@@ -10,11 +10,6 @@ export class UserService {
 
   constructor(private http: Http) { }
 
-  // Get all users
-  // getUser() {
-  //   return [{ "email": "abc.com" }, { "email": "bbb@bxxxxxx.com" }];
-  // }
-
   private commentsUrl = "https://jsonplaceholder.typicode.com/comments";
 
   getComments() {
